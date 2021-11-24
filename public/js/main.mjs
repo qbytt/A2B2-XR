@@ -462,7 +462,8 @@ function mouseRescale(delta) {
         // create artoolkitcontext instance
         arToolkitContext = new THREEx.ArToolkitContext({
             cameraParametersUrl: '/data/camera/camera_para.dat',
-            detectionMode: 'mono'
+            detectionMode: 'mono',
+            patternRatio: 0.9
         });
         
         // init artoolkitcontext
