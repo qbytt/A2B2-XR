@@ -499,7 +499,7 @@ function mouseRescale(delta) {
     
         // init controls for camera
         let markerControls = new THREEx.ArMarkerControls(arToolkitContext, _root, {
-            type: 'pattern', patternUrl: "/data/patterns/hiro.patt",
+            type: 'pattern', patternUrl: "/data/patterns/qr.patt",
         })
 
         markerControls.addEventListener('markerFound', function(event) {
