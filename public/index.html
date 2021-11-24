@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A2B2-XR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="./css/nprogress.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel='stylesheet' href="./css/app.css"/>
+  </head>
+
+  <body>
+    <div id="app-blocker">
+      <div id="status">
+        <span id="status-data" class="blink">[LOADING] %0</span>
+      </div>
+      <a id="website" href="https://a2b2.org/">a2b2.org</a>
+      <div id="logo">
+        <img src="./img/logo-outline.svg">
+      </div>
+    </div>
+    
+    <div id="ui" class="hide">
+      <div id="help" class="noselect"><span>[?]</span></div>
+      <div id="help-modal">
+        <div id="help-modal-flex">
+          <span>Point Device Camera Towards Image QR Code Marker</span>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- include vendors -->
+  <script src="/js/vendors/plugins.min.js"></script>
+  <script src="/js/vendors/nprogress.min.js"></script>
+  
+  <!-- include three.js -->
+  <script src='/js/three/three.min.js'></script>
+  <script src='/js/three/loaders/GLTFLoader.min.js'></script> 
+
+  <!-- include jsartookit -->
+  <script src="/js/jsartoolkit/artoolkit.min.js"></script>
+  <script src="/js/jsartoolkit/artoolkit.api.min.js"></script>
+
+  <!-- include threex.artoolkit -->
+  <script src="/js/threex/artoolkitsource.min.js"></script>
+  <script src="/js/threex/artoolkitcontext.min.js"></script>
+  <script src="/js/threex/arbasecontrols.min.js"></script>
+  <script src="/js/threex/armarkercontrols.min.js"></script>
+
+  <!-- application -->
+  <script type="module" src="/js/main.mjs"></script>
+</html>
